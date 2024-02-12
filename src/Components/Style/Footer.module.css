@@ -1,6 +1,6 @@
 footer {
-    background-color: #FCF0F9;
-    border: 1px solid #E4E4E4;
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border);
     position: relative;
     text-align: left;
 }
@@ -16,7 +16,6 @@ footer {
     border-top: 3px solid #E4E4E4;
     margin: 0;
 }
-
 
 .copyRight p {
     font-size: 1rem;
@@ -59,7 +58,7 @@ footer {
 }
 
 .searchContainer {
-    background-color: rgba(32, 60, 134, 0.05);
+    background-color: var(--tertiary-color);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -108,9 +107,10 @@ input::placeholder {
     color: #3F3F40;
 }
 
+
 .link {
     text-decoration: none;
-    color: #3F3F40;
+    color: var(--text-color)
 }
 
 
