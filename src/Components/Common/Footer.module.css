@@ -1,0 +1,45 @@
+footer {
+    background-color: #FCF0F9;
+    border: 1px solid #E4E4E4;
+    position: relative;
+    text-align: left;
+}
+
+.container {
+    padding: 6rem 6rem;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    gap: 1rem;
+}
+
+.navChild {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: start;
+}
+
+.searchContainer {
+    background-color: rgba(32, 60, 134, 0.05);
+    padding: 2rem;
+    
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #3F3F40;
+}
+
+.link {
+    text-decoration: none;
+    color: #3F3F40;
+}
