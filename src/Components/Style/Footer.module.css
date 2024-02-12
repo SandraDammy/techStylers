@@ -1,6 +1,6 @@
 footer {
-    background-color: #FCF0F9;
-    border: 1px solid #E4E4E4;
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border);
     position: relative;
     text-align: left;
 }
@@ -23,23 +23,23 @@ footer {
 }
 
 .searchContainer {
-    background-color: rgba(32, 60, 134, 0.05);
+    background-color: var(--tertiary-color);
     padding: 2rem;
-    
 }
 
 h6 {
     font-weight: 700;
     font-size: 1rem;
+    line-height: 1.75rem;
+    color:  var(--Dark-color);
 }
 
 p {
     font-weight: 400;
-    font-size: 0.9rem;
-    color: #3F3F40;
+    font-size: 1rem;
 }
 
 .link {
     text-decoration: none;
-    color: #3F3F40;
+    color: var(--text-color)
 }

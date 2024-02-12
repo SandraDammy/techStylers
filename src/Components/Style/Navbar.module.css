@@ -1,14 +1,5 @@
-:root {
-  --font-weight: 400;
-  --z-fixed: 100;
-  --font-size: 14px;
-  --bg-color: #ffffff;
-  --shadow-effect: 0 0 20px 0 rgba(188, 182, 182, 0.25);
-  --hover-color: #b5529d;
-}
-
 .navMenu {
-    display: block;
+  display: block;
 }
 
 header {
@@ -16,7 +7,9 @@ header {
   box-shadow: var(--shadow-effect);
   width: 100%;
   z-index: var(--z-fixed);
+  margin-bottom: 0.5rem;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -37,41 +30,43 @@ nav {
 }
 
 .navItem {
-  font-size: var(--font-size);
+  font-size: var(--font-text);
   font-weight: var(--font-weight);
 }
 
 .navMenuActive {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: hsla(0, 0%, 6%, 0.2);
-    backdrop-filter: blur(16px);
-    width: 60%;
-    height: 100vh;
-    transition: right 0.4s;
-    z-index: var(--z-fixed);
-    padding: 2rem;
-  }
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: var(--TS-Black);
+  ;
+  backdrop-filter: blur(16px);
+  width: 60%;
+  height: 100vh;
+  transition: right 0.4s;
+  z-index: var(--z-fixed);
+  padding: 2rem;
+}
 
 .navMenu {
-    display: block;
+  display: block;
 }
 
 .navLink {
-  color: #000000;
+  color: var(--TS-Black);
   transition: color 0.3s ease;
 }
 
 .navLink:hover {
-  color: var(--hover-color);
-  border-bottom: 3px solid var(--hover-color);
+  color: var(--Primary-Color);
+  border-bottom: 3px solid var(--Primary-Color);
   padding-bottom: 1.2rem;
+  font-weight: 800;
 }
 
 .navLink:active {
-  color: var(--hover-color);
-  border-bottom: 4px solid var(--hover-color);
+  color: var(--Primary-Color);
+  border-bottom: 4px solid var(--Primary-Color);
   padding-bottom: 1.2rem;
 }
 
@@ -87,22 +82,27 @@ a {
   nav {
     padding: 2rem
   }
+
   .hamburger {
     display: block;
     font-size: 1.5rem;
     cursor: pointer;
   }
+
   .navMenu {
     display: none;
   }
+
   .navItem {
     font-size: 1.5rem
   }
+
   .navMenuActive {
     display: block;
   }
+
   .navLink:hover {
-    color: #000000;
+    color: var(--TS-Black);
     border-bottom: none;
     padding-bottom: 0;
   }
@@ -112,10 +112,12 @@ a {
   .hamburger {
     display: none;
   }
+
   .navList {
     flex-direction: row;
     column-gap: 2rem;
   }
+
   .navMenuActive {
     display: none;
   }
