@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    background-color: var(--secondary-bg);
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    padding-top: 5rem;
+    gap: 2rem;
+}
+
+.title {
+    color: var(--TS-Black, #373435);
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 79px;
+}
+
+span {
+    color: var(--secondary-color);
+}
+
+.desc {
+    color: var(--TS-Black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 2rem;
+}
+
+.imgContainer {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    padding: 76px 0px 77px 45px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background: var(--tertiary-bg);
+    margin: 5rem 0rem 5rem 0rem;
+    border-radius: 0px 0px 0px 60px;
+}
+
+.heroImg {
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 15px;
+}
+
+.bigTxt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    color: var(--TS-Black, #373435);
+    gap: 5rem;
+}
+
+.big {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.txt {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+

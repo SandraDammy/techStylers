@@ -1,0 +1,56 @@
+/* Community.module.css */
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 5rem;
+    justify-content: space-between;
+    gap: 10rem;
+    background-color: var(--white-color);
+}
+
+.imgContainer {
+    display: flex;
+    flex: 1;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.textContainer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: var(TS-Black);
+    text-align: left;
+    gap: 2rem;
+}
+
+.textContainer h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.textContainer p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.textContainer div:last-child {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 2rem;
+    color: var(--primary-color);
+    
+
+}
