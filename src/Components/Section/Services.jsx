@@ -1,22 +1,23 @@
 import React from "react";
+import style from "../Style/Services.module.css";
 
 const Services = () => {
   return (
-    <div>
+    <div className={style.container}>
       <h1>Our Services</h1>
-      <div>
-        <div>
-          <div>
+      <div className={style.imgContainer}>
+        <div className={style.imgServices}>
+          <div className={style.img}>
             <img src="Image/Our services 1.png" alt="" className="logo" />
           </div>
           <div>
-            <p>Tech Workshop</p>
-            <p>
+            <p className={style.title}>Tech Workshop</p>
+            <p className={style.desc}>
               Our workshops provide interactive, hands-on learning experiences
               to empower women with the skills and knowledge needed to succeed
               in the tech industry.
             </p>
-            <p>Read More...</p>
+            <p className={style.readme}>Read More...</p>
           </div>
         </div>
         <div>
@@ -24,13 +25,13 @@ const Services = () => {
             <img src="/Image/Our services 2.png" alt="" className="logo" />
           </div>
           <div>
-            <p>Learning Resources</p>
-            <p>
+            <p className={style.title}>Learning Resources</p>
+            <p className={style.desc}>
               Our learning resources provide curated, high-quality content that
               is accessible to all women, regardless of their level of
               experience or background.
             </p>
-            <p>Read More...</p>
+            <p className={style.readme}>Read More...</p>
           </div>
         </div>
         <div>
@@ -38,13 +39,13 @@ const Services = () => {
             <img src="/Image/Our services 3.png" alt="" className="logo" />
           </div>
           <div>
-            <p>Community Events</p>
-            <p>
+            <p className={style.title}>Community Events</p>
+            <p className={style.desc}>
               Our community events provide a platform for women to connect,
               share ideas, and learn from each other in a supportive and
               inclusive environment.
             </p>
-            <p>Read More...</p>
+            <p className={style.readme}>Read More...</p>
           </div>
         </div>
       </div>
