@@ -39,6 +39,7 @@ nav {
   top: 60px;
   right: 0;
   background-color: var(--nav-bg);
+  /* color: var(--white-color); */
   backdrop-filter: blur(16px);
   width: 60%;
   height: 100vh;
