@@ -162,3 +162,13 @@ input::placeholder {
         gap: 1rem;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    .searchContainer {
+        padding: 0.9rem;
+    }
+}
