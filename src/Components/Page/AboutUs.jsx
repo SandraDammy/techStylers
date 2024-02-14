@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <div className={about.container}>
       <div className={about.container1}>
-        <img src={aboutImage} alt="About Us" width="450px" />
+        <img src={aboutImage} alt="About Us" width="550px" />
         <div className={about.cards}>
           <div className={about.card}>
             <h3>520+</h3>
