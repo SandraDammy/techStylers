@@ -1,14 +1,17 @@
 import React from "react";
 import style from "../Style/Resources.module.css";
 import imgResources from "../../Assets/Image/Resources Image.png";
+import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+
 
 const Gallery = () => {
   return (
     <div className={style.container}>
       <div className={style.eventContainer}>
         <div className={style.txtLink}>
-          <div>
+          <div className={style.txtIcon}>
             <p>TechStyler Event 2021</p>
+            <MdOutlineKeyboardArrowUp className={style.icon} />
           </div>
           <div>
             <a href="#" className={style.seeLink}>
@@ -57,8 +60,9 @@ const Gallery = () => {
       </div>
       <div className={style.eventContainer}>
       <div className={style.txtLink}>
-          <div>
+      <div className={style.txtIcon}>
             <p>TechStyler Event 2022</p>
+            <MdOutlineKeyboardArrowUp className={style.icon} />
           </div>
           <div>
             <a href="#" className={style.seeLink}>
@@ -107,8 +111,9 @@ const Gallery = () => {
       </div>
       <div className={style.eventContainer}>
       <div className={style.txtLink}>
-          <div>
+      <div className={style.txtIcon}>
             <p>TechStyler Event 2023</p>
+            <MdOutlineKeyboardArrowUp className={style.icon} />
           </div>
           <div>
             <a href="#" className={style.seeLink}>

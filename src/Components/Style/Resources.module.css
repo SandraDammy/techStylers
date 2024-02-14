@@ -48,7 +48,7 @@
     gap: 1rem;
 }
 
-.txtContainer h1 , .txtLink p{
+.txtContainer h1 {
     color: var(--sub-black);
     font-size: 24px;
     font-style: normal;
@@ -65,7 +65,7 @@
     margin-bottom: 1rem;
 }
 
-.downloadLink , .seeLink{
+.downloadLink {
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -79,13 +79,42 @@
     margin-bottom: 5rem;
     /* gap: 5rem; */
 }
+
 .txtLink {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
 }
+
+.txtIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.txtIcon p {
+    line-height: 30px;
+    color: var(--sub-black);
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    color: #343F42;
+}
+
+.seeLink {
+    line-height: 24px;
+    color: var(--secondary-color);
+    text-decoration-line: underline;
+}
+
 .cardGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 5px;
 }
