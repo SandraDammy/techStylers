@@ -1,9 +1,6 @@
 import React from "react";
 import style from "../Style/Resources.module.css";
 import imgEvent from "../../Assets/Image/Events image.png";
-import blog from "../Style/About.module.css";
-import blog1 from "../Style/Blog.module.css";
-import aboutImage from "../../Assets/Image/About us image.png";
 import Button from "../Common/Button";
 
 const Event = () => {
