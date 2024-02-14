@@ -3,7 +3,7 @@
 }
 
 header {
-  background-color: var(--bg-color);
+  background-color: var(--white-color);
   box-shadow: var(--shadow-effect);
   width: 100%;
   z-index: var(--z-fixed);
@@ -39,7 +39,6 @@ nav {
   top: 60px;
   right: 0;
   background-color: var(--nav-bg);
-  /* color: var(--white-color); */
   backdrop-filter: blur(16px);
   width: 60%;
   height: 100vh;
@@ -58,15 +57,15 @@ nav {
 }
 
 .navLink:hover {
-  color: var(--Primary-Color);
-  border-bottom: 3px solid var(--Primary-Color);
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
   padding-bottom: 1.2rem;
   font-weight: 800;
 }
 
 .navLink:active {
-  color: var(--Primary-Color);
-  border-bottom: 4px solid var(--Primary-Color);
+  color: var(--primary-Color);
+  border-bottom: 4px solid var(--primary-color);
   padding-bottom: 1.2rem;
 }
 
