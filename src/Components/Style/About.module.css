@@ -26,16 +26,16 @@
     padding: 2rem;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 8px;
-    width: 200px;
+    width: 250px;
 }
 .card h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--TS-Black);
 }
 
 .card p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--TS-Black);
 }
@@ -57,11 +57,13 @@
     color: var(--TS-Black);
     word-break: break-word;
     line-height: 2;
+    font-size: 1.1rem;
 }
 
 .textlink p {
     color: var(--TS-Black);
     font-weight: 400;
+    font-size: 1.1rem;
 }
 
 .textlink a {
@@ -69,6 +71,35 @@
     font-weight: 700;
     text-decoration: underline;
 }
+
+@media screen and (min-width: 1440px) {
+    .container1 img {
+        width: 650px;
+    }
+    .card {
+        width: 295px;
+    }
+
+    .card h3 {
+        font-size: 2.5rem;
+    }
+
+    .card p {
+        font-size: 1.8rem;
+    }
+    .containerHeader h1 {
+        font-size: 3.5rem;
+    }
+
+    .containertext p {
+        font-size: 1.25rem;
+    }
+
+    .textlink p {
+        font-size: 1.25rem;
+    }
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -83,7 +114,7 @@
     }
 
     .cards {
-        grid-template-columns: repeat(3, 0.4fr);
+        grid-template-columns: repeat(2, 0.4fr);
     }
 
     .card {
@@ -108,6 +139,10 @@
 
     .container1 img {
         width: 380px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .card {
@@ -171,5 +206,9 @@
 
     .containerHeader h1 {
         font-size: 1.5rem;
+    }
+
+    .cards {
+        gap: 1rem;
     }
 }
