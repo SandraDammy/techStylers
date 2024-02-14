@@ -3,6 +3,7 @@
     justify-content: space-between;
     gap: 100px;
     background-color: var(--secondary-bg);
+    overflow-x: hidden;
 }
 
 .textContainer {
@@ -37,20 +38,28 @@ span {
 .imgContainer {
     display: flex;
     width: 600px;
-    height: 300px;
     padding: 76px 0px 77px 45px;
     justify-content: flex-end;
     align-items: flex-start;
     background: var(--tertiary-bg);
-    margin: 5rem 0rem 5rem 0rem;
+    margin: 5em auto;
     border-radius: 0px 0px 0px 60px;
 }
 
 .heroImg {
     flex: 1 0 0;
     align-self: stretch;
+    max-width: 100%;
     border-radius: 15px;
+    display: flex;
+    gap: 0.3em;
+    overflow: hidden;
 }
+
+ .logo {
+   width: 362px;
+   height: 474px;
+} 
 
 .bigTxt {
     display: flex;

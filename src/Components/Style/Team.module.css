@@ -1,0 +1,40 @@
+.teamContainer {
+   background-color: var(--primary-bg);
+   padding: 2em;
+}
+.teamHeading h1{
+    font-weight: 900;
+    margin-left: 2.5em;
+}
+.teamHeading p{
+    margin: 1em 0em 0.5em 5em;
+    color: var(--text-color);
+}
+.teamMemberImage{
+    float: left;
+    margin: 2em;
+}
+.teamMemberImage img{
+    max-width: 194px;
+    height: 164px;
+}
+.teamMembers{
+    display: flex;
+    margin: 1em auto;
+    padding: 4em 3em;
+}
+.teamMember{
+    display: flex;
+    align-items: center;
+}
+.name{
+    font-weight: 700;
+    margin-bottom: 0.4em;
+}
+.title{
+    color: var(--secondary-color);
+    margin-bottom: 0.7em;
+}
+.description{
+    width: 80%;
+}

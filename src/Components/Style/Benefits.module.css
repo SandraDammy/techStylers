@@ -2,14 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin: 5rem;
-    background-color: var(--white-color);
+    margin: 0rem;
+    background-color: var(--primary-bg);
+    overflow-x: hidden;
 }
 
 .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 3em;
+    margin: 0 4em;
 }
 
 .txtImg {
@@ -26,13 +29,28 @@
 
 .txt {
     display: flex;
+    margin: 0 auto;
+    gap: 2em;
 }
-
+.txt div{
+    padding: 2em;
+}
+.txt div ul{
+    list-style:circle;
+}
+.txt div ul li{
+    margin-top: 2em;
+}
 .imgContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
     padding: 20px;
-    gap: 10rem;
+}
+.imgContainer img{
+    max-width: 396.76px;
+}
+.hr{
+    border: 1px solid var(--secondary-color);
+    width:50%;
 }
