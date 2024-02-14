@@ -1,8 +1,6 @@
 import React from "react";
 import style from  "../Style/landingPage.module.css";
 import Button from "../Common/Button";
-import hero1 from "../../Assets/Image/Hero Image 1.png";
-import hero2 from "../../Assets/Image/Hero Image 2.png"
 
 const LandingPage = () => {
   const btnEventHandler = () => {
@@ -49,8 +47,8 @@ const LandingPage = () => {
       </div>
       <div className={style.imgContainer}>
         <div className={style.heroImg}>
-          <img src={hero1} alt="" className={style.logo} />
-          <img src={hero2} alt="" className={style.logo} />
+          <img src="../../Assets/Image/Hero Image 1.png" alt="" className={style.logo} />
+          <img src="../../Assets/Image/Hero Image 2.png" alt="" className={style.logo} />
         </div>
       </div>
     </section>

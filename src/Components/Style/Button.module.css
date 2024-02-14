@@ -46,3 +46,74 @@
     border: 2px solid var(--blue-color);
     color: var(--secondary-color);
 }
+/* Button.module.css */
+.btnPry {
+    display: flex;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    width: 200px;
+    height: 62px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.4s;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.btnPry:hover {
+    background-color: var(--bck-color-bg);
+    border: 2px solid var(--blue-color);
+    color: var(--secondary-color);
+}
+.btnTran {
+    display: flex;
+    color: var(--white-color);
+    background-color: transparent;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--white-color);
+    width: 200px;
+    height: 62px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.4s;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+}
+.btnTran:hover {
+    background-color: var(--bck-color-bg);
+    border: 2px solid var(--blue-color);
+    color: var(--secondary-color);
+}
+
+.btnSec {
+    display: flex;
+    color: var(--TS-Black);
+    background-color: var(--white-color);
+    text-decoration: none;
+    border: 2px solid transparent;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.4s;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.btnSec:hover {
+    background-color: var(--bck-color-bg);
+    border: 2px solid var(--blue-color);
+    color: var(--secondary-color);
+}

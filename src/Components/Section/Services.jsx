@@ -1,8 +1,5 @@
 import React from "react";
 import style from "../Style/Services.module.css";
-import service1 from "../../Assets/Image/Our services 1.png";
-import service2 from "../../Assets/Image/Our services 2.png";
-import service3 from "../../Assets/Image/Our services 3.png";
 
 const Services = () => {
   return (
@@ -11,7 +8,7 @@ const Services = () => {
       <div className={style.imgContainer}>
         <div className={style.imgServices}>
           <div className={style.img}>
-          <img src={service1} alt="" className={style.logo} />
+            <img src="Image/Our services 1.png" alt="" className="logo" />
           </div>
           <div>
             <p className={style.title}>Tech Workshop</p>
@@ -25,7 +22,7 @@ const Services = () => {
         </div>
         <div>
           <div>
-          <img src={service2} alt="" className={style.logo} />
+            <img src="/Image/Our services 2.png" alt="" className="logo" />
           </div>
           <div>
             <p className={style.title}>Learning Resources</p>
@@ -39,7 +36,7 @@ const Services = () => {
         </div>
         <div>
           <div>
-            <img src={service3} alt="" className={style.logo} />
+            <img src="/Image/Our services 3.png" alt="" className="logo" />
           </div>
           <div>
             <p className={style.title}>Community Events</p>

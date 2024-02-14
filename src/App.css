@@ -3,6 +3,7 @@
 :root {
   --white-color: #ffffff;
   --black: #000;
+  --sub-black: #323232;
   --TS-Black: #373435;
   --nav-bg: hsla(0, 0%, 6%, 0.2);
   --Dark-color: #0A142F;
@@ -21,6 +22,8 @@
   --z-fixed: 100;
   --font-size: 16px;
   --font-weight: 400;
+  --circle-color: #D9D9D9;
+  --blog-bg: #F0EEEE;
 }
 
 * {

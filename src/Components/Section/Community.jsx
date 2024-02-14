@@ -1,13 +1,13 @@
 import React from "react";
 import style from "../Style/Community.module.css";
 import Title from "../Common/Title";
-import image from "../../Assets/Image/About us image.png"
 
 const Community = () => {
   return (
     <div className={style.container}>
       <div className={style.imgContainer}>
-        <img src={image} alt="" className={style.logo} />
+        <img src="/Image/Resources Image.png" alt="" className={style.logo} />
+        <p>image</p>
       </div>
       <div className={style.textContainer}>
         <h1>A Community for Tech-Savy Women </h1>
