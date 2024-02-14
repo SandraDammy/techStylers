@@ -25,7 +25,6 @@
 .card {
     background-color: #ffffff;
     padding: 20px;
-    text-align: center;
 }
 
 .imgResources {
@@ -179,4 +178,105 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
+}
+
+.txtEvent {
+    display: flex;
+    flex-direction: column;
+    color: var(--TS-Black);
+}
+
+.txtEvent h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.txtEvent p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 0.2rem;
+}
+
+.eventTxt {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.seeMoreLink {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--primary-color);
+}
+
+.postEvent {
+    display: flex;
+    flex-direction: column;
+}
+
+.eventPost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.pastEvent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #908D8E;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.pastEvent :hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem
+}
+
+.eventRegister {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+    background-image: linear-gradient(#000000, #0000009E, #D9D9D900), url(../../Assets/Image/Events\ image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    padding: 5rem 2.5rem;
+    color: var(--white-color);
+
+}
+
+.eventRegister h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 79px;
+    margin-bottom: 2rem;
+}
+
+.eventRegister p {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.09em;
+}
+
+.eventBtn {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
