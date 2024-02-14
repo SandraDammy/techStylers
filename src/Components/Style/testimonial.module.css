@@ -1,0 +1,42 @@
+.testimonialContainer{
+    padding: 2em;
+}
+.testimonialHeading h1{
+    font-weight: 900;
+    margin-left: 2.5em;
+    margin-top: 1em;
+}
+.testimonialHeading p{
+    margin: 1em 0em 0.5em 5em;
+    color: var(--text-color);
+}
+.testimonial {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .testimonialContent {
+    flex-basis: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 2.5em;
+  }
+  .testimonialContentContainer{
+    padding: 4em;
+    padding-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .testimonialAuthor{
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    margin-top: 1em;
+  }
+  .testimonialAuthor img{
+    width: 32px;
+    height: 32px;
+  }
+  .name{
+    color: var(--secondary-color);
+  }

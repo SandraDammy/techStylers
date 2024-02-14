@@ -11,12 +11,12 @@
 
 .imgContainer {
     display: flex;
-    flex: 1;
-    background-color: red;
     justify-content: center;
     align-items: center;
 }
-
+.imgContainer img{
+   width: 517px;
+}
 .logo {
     width: 100px;
     height: auto;

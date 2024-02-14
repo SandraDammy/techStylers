@@ -3,6 +3,7 @@
     justify-content: space-between;
     gap: 100px;
     background-color: var(--secondary-bg);
+    overflow-x: hidden;
 }
 
 .textContainer {
@@ -37,20 +38,28 @@ span {
 .imgContainer {
     display: flex;
     width: 600px;
-    height: 300px;
     padding: 76px 0px 77px 45px;
     justify-content: flex-end;
     align-items: flex-start;
     background: var(--tertiary-bg);
-    margin: 5rem 0rem 5rem 0rem;
+    margin: 5em auto;
     border-radius: 0px 0px 0px 60px;
 }
 
 .heroImg {
     flex: 1 0 0;
     align-self: stretch;
+    max-width: 100%;
     border-radius: 15px;
+    display: flex;
+    gap: 0.3em;
+    overflow: hidden;
 }
+
+ .logo {
+   width: 362px;
+   height: 474px;
+} 
 
 .bigTxt {
     display: flex;
@@ -59,7 +68,7 @@ span {
     margin-top: 7rem;
     margin-bottom: 3rem;
     color: var(--TS-Black, #373435);
-    gap: 3rem;
+    gap: 5rem;
 }
 
 .big {
@@ -72,4 +81,73 @@ span {
     font-weight: 400;
 }
 
-
+/* For smaller devices like tablets */
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .textContainer {
+      margin-left: 0;
+      padding: 2rem;
+      text-align: center;
+    }
+  
+    .title {
+      font-size: 36px;
+      line-height: 1.2;
+    }
+  
+    .desc {
+      font-size: 18px;
+      margin-bottom: 1rem;
+    }
+  
+    .bigTxt {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+  
+    .big,
+    .txt {
+      text-align: center;
+    }
+  
+    .imgContainer {
+      width: 100%;
+      padding: 0;
+      margin: 2em 0;
+      border-radius: 0;
+    }
+  
+    .heroImg {
+      flex-direction: column;
+      gap: 1em;
+    }
+  
+    .logo {
+      width: 80%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+  
+  /* For even smaller devices like smartphones */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 28px;
+    }
+  
+    .big {
+      font-size: 24px;
+    }
+  
+    .txt {
+      font-size: 18px;
+    }
+  }
+  
