@@ -233,11 +233,9 @@
     font-weight: 700;
     line-height: 24px;
     color: #908D8E;
-    cursor: pointer;
-    transition: color 0.3s;
 }
 
-.pastEvent :hover {
+.pastEvent p:hover {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 0.5rem
