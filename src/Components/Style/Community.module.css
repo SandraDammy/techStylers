@@ -52,4 +52,18 @@
     line-height: 24px;
     margin-bottom: 1rem;
     color: var(--primary-color);
+    
+
+}
+@media(max-width:968px){
+    .container{
+        flex-direction: column;
+    }
+    .imgContainer{
+       justify-content: center;
+       margin: 0;
+    }
+    .imgContainer img{
+        
+    }
 }
