@@ -23,6 +23,7 @@ const LandingPage = () => {
             title={"Join Now"}
             btnEventHandler={btnEventHandler}
           />
+          <div></div>
         </div>
         <div className={style.bigTxt}>
           <div>

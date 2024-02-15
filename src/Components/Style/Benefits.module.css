@@ -2,55 +2,72 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin: 0rem;
+    padding: 2rem 5rem;
     background-color: var(--primary-bg);
-    overflow-x: hidden;
+    gap: 2rem;
 }
 
 .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 3em;
-    margin: 0 4em;
+    gap: 2em;
+}
+
+.hr {
+    border: 1px solid #E298C1;
+    width: 50%;
+}
+
+.title p {
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--primary-color);
 }
 
 .txtImg {
     display: flex;
+    flex: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    gap: 10rem;
-}
-
-.txtImg hr {
-    font-size: 24px;
 }
 
 .txt {
     display: flex;
-    margin: 0 auto;
-    gap: 2em;
+    flex: 80%;
+    gap: 1em;
 }
-.txt div{
-    padding: 2em;
+
+.txt div ul {
+    list-style: none;
+    text-align: left;
 }
-.txt div ul{
-    list-style:circle;
+
+.txt div ul li {
+    margin-bottom: 10px;
+    background-image: url(../../Assets/Image/UlIcon.png);
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: 0 50%;
+    line-height: 1.5;
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+
 }
-.txt div ul li{
-    margin-top: 2em;
-}
+
 .imgContainer {
     display: flex;
-    justify-content: space-between;
+    flex: 20%;
     align-items: center;
-    padding: 20px;
+    margin-left: 2rem;
 }
-.imgContainer img{
+
+.imgContainer img {
     max-width: 396.76px;
-}
-.hr{
-    border: 1px solid var(--secondary-color);
-    width:50%;
 }

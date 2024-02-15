@@ -21,7 +21,7 @@ const Event = () => {
             btnEventHandler={btnRegister}
           />
           <Button
-            className={"btnTran"}
+            className={"btnSec"}
             title={"See more"}
             btnEventHandler={btnEventHandler}
           />
