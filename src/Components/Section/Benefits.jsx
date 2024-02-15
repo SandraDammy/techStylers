@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../Style/Benefits.module.css";
-import benefits from "../../Assets/Image/Benefits.png"
+import benefits from "../../Assets/Image/Benefits.png";
 
 const Benefits = () => {
   return (
@@ -20,14 +20,14 @@ const Benefits = () => {
               <li>Mentorship and Support</li>
               <li>Advancement in Tech Careers</li>
             </ul>
-</div>
+          </div>
           <div>
             <ul>
               <li>Increased Confidence and Skills</li>
               <li>Networking Opportunities</li>
               <li>Building Lifelong Connections</li>
               <li>Professional Development Workshops</li>
-              </ul>
+            </ul>
           </div>
         </div>
         <div className={style.imgContainer}>
