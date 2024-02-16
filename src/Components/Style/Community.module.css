@@ -2,10 +2,9 @@
 .container {
     display: flex;
     align-items: center;
-    padding: 20px;
-    margin: 5rem;
+    padding: 5rem 5rem;
     justify-content: space-between;
-    gap: 10rem;
+    gap: 3rem;
     background-color: var(--white-color);
 }
 
@@ -14,9 +13,11 @@
     justify-content: center;
     align-items: center;
 }
-.imgContainer img{
-   width: 517px;
+
+.imgContainer img {
+    width: 517px;
 }
+
 .logo {
     width: 100px;
     height: auto;
@@ -27,13 +28,13 @@
     flex: 1;
     flex-direction: column;
     color: var(TS-Black);
-    text-align: left;
+    text-align: justify;
     gap: 2rem;
 }
 
 .textContainer h1 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
@@ -49,8 +50,20 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 24px;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
     color: var(--primary-color);
     
 
+}
+@media(max-width:968px){
+    .container{
+        flex-direction: column;
+    }
+    .imgContainer{
+       justify-content: center;
+       margin: 0;
+    }
+    .imgContainer img{
+        
+    }
 }

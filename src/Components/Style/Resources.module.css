@@ -23,8 +23,9 @@
 }
 
 .card {
-    background-color: #ffffff;
-    padding: 20px;
+    gap: 5rem;
+    /* background-color: #ffffff; */
+    /* padding: 20px; */
 }
 
 .imgResources {

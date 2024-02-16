@@ -1,51 +1,55 @@
 import React from "react";
 import style from "../Style/Services.module.css";
+import Title from "../Common/Title";
+import Services1 from "../../Assets/Image/Our services 1.png";
+import Services2 from "../../Assets/Image/Our services 2.png";
+import Services3 from "../../Assets/Image/Our services 3.png";
 
 const Services = () => {
   return (
     <div className={style.container}>
-      <h1>Our Services</h1>
+      <Title className={"titlePry"} title={"Our Services"} />
       <div className={style.imgContainer}>
-        <div className={style.imgServices}>
-          <div className={style.img}>
-            <img src="Image/Our services 1.png" alt="" className="logo" />
+        <div className={style.card}>
+          <div className={style.imgServices}>
+            <img src={Services1} alt="Resources Img" className={style.img} />
           </div>
-          <div>
-            <p className={style.title}>Tech Workshop</p>
-            <p className={style.desc}>
+          <div className={style.txtService}>
+            <h4>Tech Workshop</h4>
+            <p>
               Our workshops provide interactive, hands-on learning experiences
               to empower women with the skills and knowledge needed to succeed
               in the tech industry.
             </p>
-            <p className={style.readme}>Read More...</p>
+            <p className={style.readme}> Read More...</p>
           </div>
         </div>
-        <div>
-          <div>
-            <img src="/Image/Our services 2.png" alt="" className="logo" />
+        <div className={style.card}>
+          <div className={style.imgServices}>
+            <img src={Services2} alt="Resources Img" className={style.img} />
           </div>
-          <div>
-            <p className={style.title}>Learning Resources</p>
-            <p className={style.desc}>
+          <div className={style.txtService}>
+            <h4>Learning Resources</h4>
+            <p>
               Our learning resources provide curated, high-quality content that
               is accessible to all women, regardless of their level of
               experience or background.
             </p>
-            <p className={style.readme}>Read More...</p>
+            <p className={style.readme}> Read More...</p>
           </div>
         </div>
-        <div>
-          <div>
-            <img src="/Image/Our services 3.png" alt="" className="logo" />
+        <div className={style.card}>
+          <div className={style.imgServices}>
+            <img src={Services3} alt="Resources Img" className={style.img} />
           </div>
-          <div>
-            <p className={style.title}>Community Events</p>
-            <p className={style.desc}>
+          <div className={style.txtService}>
+            <h4>Community Events</h4>
+            <p>
               Our community events provide a platform for women to connect,
               share ideas, and learn from each other in a supportive and
               inclusive environment.
             </p>
-            <p className={style.readme}>Read More...</p>
+            <p className={style.readme}> Read More...</p>
           </div>
         </div>
       </div>

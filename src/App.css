@@ -8,6 +8,7 @@
   --nav-bg: hsla(0, 0%, 6%, 0.2);
   --Dark-color: #0A142F;
   --text-color: #3F3F40;
+  --text-ash: #8D898B;
   --primary-color: #b5529d;
   --secondary-color: #DD76AE;
   --tertiary-color: #203c86;
@@ -38,4 +39,5 @@ body {
   background-color: var(--white-color);
   height: 100%;
   width: 100%;
+  color: var(--TS-Black);
 }

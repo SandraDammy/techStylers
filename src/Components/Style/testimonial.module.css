@@ -1,42 +1,54 @@
-.testimonialContainer{
-    padding: 2em;
+.testimonialsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 2rem 5rem;
+  gap: 0.5rem;
 }
-.testimonialHeading h1{
-    font-weight: 900;
-    margin-left: 2.5em;
-    margin-top: 1em;
+
+.testTxt {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
 }
-.testimonialHeading p{
-    margin: 1em 0em 0.5em 5em;
-    color: var(--text-color);
+
+.testimonialContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
 }
-.testimonial {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .testimonialContent {
-    flex-basis: 50%;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 2.5em;
-  }
-  .testimonialContentContainer{
-    padding: 4em;
-    padding-top: 1em;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .testimonialAuthor{
-    display: flex;
-    align-items: center;
-    gap: 0.4em;
-    margin-top: 1em;
-  }
-  .testimonialAuthor img{
-    width: 32px;
-    height: 32px;
-  }
-  .name{
-    color: var(--secondary-color);
-  }
+
+.testimonialMember {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-wrap: wrap;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.testimonialMember p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.testimonialAuthor {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.testimonialAuthor img {
+  width: 35px;
+  height: 35px;
+}
+
+.name {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+
+}
