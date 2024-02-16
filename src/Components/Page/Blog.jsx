@@ -9,7 +9,7 @@ const Blog = () => {
     <div className={blog.container}>
       <div className={blog1.container1}>
         <div className={blog1.containerimg}>
-          <img src={aboutImage} alt="About Us" width="600px" />
+          <img src={aboutImage} alt="About Us" width="700px" />
           <div className={blog1.imageContent}>
             <h6>
               Featured

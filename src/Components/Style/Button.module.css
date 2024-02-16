@@ -117,3 +117,15 @@
     border: 2px solid var(--blue-color);
     color: var(--secondary-color);
 }
+
+
+@media screen and (max-width: 480px) {
+    .btnPry {
+        width: 150px;
+        height: 60px;
+    }
+    .btnTran {
+        width: 150px;
+        height: 60px;
+    }
+}
