@@ -31,9 +31,16 @@
     text-align: left;
 }
 
+.articleDetail {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
 .articleInfo {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     gap: 0.5em;
 }
 
@@ -49,6 +56,7 @@
     height: 10px;
     border-radius: 50%;
     background-color: var(--circle-color);
+    margin-top: 7px;
 }
 
 .articleTimeDate {

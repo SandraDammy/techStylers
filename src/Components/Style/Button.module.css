@@ -67,6 +67,23 @@
     color: var(--secondary-color);
 }
 
+.btnActive {
+    display: flex;
+    color: var(--secondary-color);
+    background-color: var(--bck-color-bg);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 0.4s;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    cursor: pointer;
+}
+
 .btnOutline {
     display: flex;
     color: var(--secondary-color);

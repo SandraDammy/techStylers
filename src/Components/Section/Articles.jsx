@@ -2,47 +2,80 @@ import React from "react";
 import Title from "../Common/Title";
 import style from "../Style/Article.module.css";
 import Button from "../Common/Button";
+import { useState } from "react";
+import { articleData } from "../Misc/articleData";
 
 const Articles = () => {
-  const btnEventHandler = () => {
-    console.log("Event clicked!");
-  };
-  const btnEventTech = () => {
-    console.log("Event clicked!");
-  };
-  const btnEventSuccess = () => {
-    console.log("Event clicked!");
-  };
-  const btnEventCareer = () => {
-    console.log("Event clicked!");
-  };
   const btnEventSee = () => {
     console.log("Event clicked!");
   };
+
+  const [article, setArticle] = useState("all");
+  const [techTrend, setTechTrend] = useState("techTrend");
+  const [careerAdvice, setCareerAdvice] = useState("careerAdvice");
+  const [successStories, setSuccessStories] = useState("successStories");
+  const [articledata, setArticleData] = useState(articleData);
+
+  const handleEvent = (e) => {
+    if (e.target.value === "all") {
+      setArticle("all");
+      setArticleData(articleData);
+    } else if (e.target.value === "techTrend") {
+      setTechTrend("techTrend");
+      const techTrendData = articleData.filter((article) => {
+        return article.tag === "Tech Trend";
+      });
+      setArticleData(techTrendData);
+    } else if (e.target.value === "careerAdvice") {
+      setCareerAdvice("careerAdvice");
+      const careerAdviceData = articleData.filter((article) => {
+        return article.tag === "Career Advice";
+      });
+      setArticleData(careerAdviceData);
+    } else if (e.target.value === "successStories") {
+      setSuccessStories("successStories");
+      const successStoriesData = articleData.filter((article) => {
+        return article.tag === "Success Stories";
+      });
+      setArticleData(successStoriesData);
+    } else {
+      setArticle("all");
+      setArticleData(articleData);
+    }
+  };
+
   return (
     <div className={style.container}>
       <Title className={"titlePry"} title={"Latest Articles"} />
       <div className={style.buttonsContainer}>
         <div className={style.buttons}>
           <Button
-            className={"btnTran"}
+            className={article === "all" ? "btnActive" : "btnTran"}
             title={"All"}
-            btnEventHandler={btnEventHandler}
+            btnEventHandler={handleEvent}
+            value={"all"}
           />
           <Button
-            className={"btnTran"}
+            className={techTrend === "techTrend" ? "btnActive" : "btnTran"}
             title={"Tech Trends"}
-            btnEventHandler={btnEventTech}
+            btnEventHandler={handleEvent}
+            value={"techTrend"}
           />
           <Button
-            className={"btnTran"}
+            className={
+              careerAdvice === "careerAdvice" ? "btnActive" : "btnTran"
+            }
             title={"Career Advice"}
-            btnEventHandler={btnEventCareer}
+            btnEventHandler={handleEvent}
+            value={"careerAdvice"}
           />
           <Button
-            className={"btnTran"}
+            className={
+              successStories === "successStories" ? "btnActive" : "btnTran"
+            }
             title={"Success Stories"}
-            btnEventHandler={btnEventSuccess}
+            btnEventHandler={handleEvent}
+            value={"successStories"}
           />
         </div>
         <div className={style.seeAll}>
@@ -54,52 +87,25 @@ const Articles = () => {
         </div>
       </div>
       <div className={style.articleContainer}>
-        <div className={style.article}>
-          <div className={style.articleInfo}>
-            <p className={style.articleCategory}>Tech Trend</p>
-            <div className={style.dot}></div>
-            <p className={style.articleTimeDate}>5 mins read</p>
-          </div>
-          <div className={style.articleTitle}>
-            <p>
-              Watch Axiom Space’s first all-European mission blast off the
-              launchpad
-            </p>
-          </div>
-          <div className={style.articleTimeDate}>
-            <p>4 hours ago</p>
-          </div>
-        </div>
-
-        <div className={style.article}>
-          <div className={style.articleInfo}>
-            <p className={style.articleCategory}>Career Advice</p>
-            <div className={style.dot}></div>
-            <p className={style.articleTimeDate}>7 mins read</p>
-          </div>
-          <div className={style.articleTitle}>
-            <p>
-              How to Choose a Tech Career in 2022 – A Career Changer's Guide
-            </p>
-          </div>
-          <div className={style.articleTimeDate}>
-            <p>Jan 22, 2024</p>
-          </div>
-        </div>
-
-        <div className={style.article}>
-          <div className={style.articleInfo}>
-            <p className={style.articleCategory}>Success Stories</p>
-            <div className={style.dot}></div>
-            <p className={style.articleTimeDate}>3 mins read</p>
-          </div>
-          <div className={style.articleTitle}>
-            <p>Biggest success stories of women in the world of tech</p>
-          </div>
-          <div className={style.articleTimeDate}>
-            <p>Dec 22, 2023</p>
-          </div>
-        </div>
+        {articledata.map((article, index) => {
+          return (
+            <div className={style.article} key={index}>
+              <div className={style.articleInfo}>
+                <div className={style.articleDetail}>
+                <p className={style.articleCategory}>{article.tag}</p>
+                <div className={style.dot}></div>
+                <p className={style.articleTimeDate}>{article.readTime}</p>
+                </div>
+                <div className={style.articleTitle}>
+                  <p>{article.title}</p>
+                </div>
+                <div className={style.articleTimeDate}>
+                  <p>{article.published}</p>
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
