@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import style from "../Style/Resources.module.css";
 import imgResources from "../../Assets/Image/Resources Image.png";

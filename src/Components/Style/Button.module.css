@@ -89,6 +89,18 @@
     color: var(--secondary-color);
 }
 
+
+@media screen and (max-width: 480px) {
+    .btnPry {
+        width: 150px;
+        height: 60px;
+    }
+    .btnTran {
+        width: 150px;
+        height: 60px;
+    }
+}
+
 /* title.module.css */
 .titlePry {
     font-size: 36px;
