@@ -2,6 +2,7 @@
 
 :root {
   --white-color: #ffffff;
+  --contact-bg: #FFF6FB;
   --black: #000;
   --sub-black: #323232;
   --TS-Black: #373435;
@@ -11,7 +12,7 @@
   --text-ash: #8D898B;
   --primary-color: #b5529d;
   --secondary-color: #DD76AE;
-  --tertiary-color: #203c86;
+  --tertiary-color: #203c860D;
   --primary-bg: #f5f5f5;
   --secondary-bg: #FCF0F9;
   --tertiary-bg: #ffe1f8;

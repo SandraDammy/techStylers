@@ -68,9 +68,12 @@ footer {
 .searchBar {
     padding: 12px;
     border-top-left-radius: 8px;
+    border-top-right-radius: 0px;
     border-bottom-left-radius: 8px;
-    border-color: white;
-    border: none;
+    border-bottom-right-radius: 0px;
+    border-color: var(--white-color);
+    /* border: none; */
+    background-color: var(--white-color);
 }
 
 .searchItems {
