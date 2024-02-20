@@ -1,5 +1,4 @@
 import React from "react";
-import contact from "../../Assets/Image/Contact Us Image.png";
 import style from "../Style/contact.module.css";
 import { IoAddOutline } from "react-icons/io5";
 import Button from "../Common/Button";
@@ -48,7 +47,6 @@ const Contact = () => {
               btnEventHandler={btnSubmit}
             />
           </div>
-          {/* <button type="submit"className={style.submit}>Send Message</button> */}
         </form>
       </div>
       <section className={style.formText}>
@@ -69,35 +67,35 @@ const Contact = () => {
           </div>
           <div className={style.question}>
             <div>
-              <p>How Can I be a member of techstylers</p>
+            <p>How Can I be a member of techStylers</p>
               <IoAddOutline className={style.plusSign} />
             </div>
             <hr />
           </div>
           <div className={style.question}>
             <div>
-              <p>How Can I be a member of techstylers</p>
+            <p>How Can I be a member of techStylers</p>
               <IoAddOutline className={style.plusSign} />
             </div>
             <hr />
           </div>
           <div className={style.question}>
             <div>
-              <p>How Can I be a member of techstylers</p>
+            <p>How Can I be a member of techStylers</p>
               <IoAddOutline className={style.plusSign} />
             </div>
             <hr />
           </div>
           <div className={style.question}>
             <div>
-              <p>How Can I be a member of techstylers</p>
+            <p>How Can I be a member of techStylers</p>
               <IoAddOutline className={style.plusSign} />
             </div>
             <hr />
           </div>
           <div className={style.question}>
             <div>
-              <p>How Can I be a member of techstylers</p>
+            <p>How Can I be a member of techStylers</p>
               <IoAddOutline className={style.plusSign} />
             </div>
           </div>

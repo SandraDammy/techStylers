@@ -1,8 +1,8 @@
 import React from "react";
-import style from  "../Style/landingPage.module.css";
+import style from "../Style/landingPage.module.css";
 import Button from "../Common/Button";
 import hero1 from "../../Assets/Image/Hero Image 1.png";
-import hero2 from "../../Assets/Image/Hero Image 2.png"
+import hero2 from "../../Assets/Image/Hero Image 2.png";
 
 const LandingPage = () => {
   const btnEventHandler = () => {
@@ -11,19 +11,20 @@ const LandingPage = () => {
   return (
     <section className={style.container}>
       <div className={style.textContainer}>
+        {/* <div className={style.textTitle}> */}
         <h1 className={style.title}>
           Empowering <span>Women</span>
           <br />
           In <span>Tech</span>
         </h1>
         <p className={style.desc}>Breaking Barriers, Building Futures.</p>
-        <div>
+        {/* </div> */}
+        <div className={style.btnJoin}>
           <Button
             className={"btnPry"}
             title={"Join Now"}
             btnEventHandler={btnEventHandler}
           />
-          <div></div>
         </div>
         <div className={style.bigTxt}>
           <div>
@@ -36,7 +37,7 @@ const LandingPage = () => {
           </div>
           <div>
             <p className={style.big}>5</p>
-            <p className={style.txt}>Workshops</p>
+            <p className={style.txt}>Events</p>
           </div>
           <div>
             <p className={style.big}>6</p>
