@@ -24,8 +24,6 @@
 
 .card {
     gap: 5rem;
-    /* background-color: #ffffff; */
-    /* padding: 20px; */
 }
 
 .imgResources {
@@ -117,7 +115,8 @@
 .cardGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 10px;
+    margin-top: 2rem;
 }
 
 .txtEvent {

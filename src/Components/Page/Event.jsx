@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import style from "../Style/Resources.module.css";
-import imgEvent from "../../Assets/Image/Events image.png";
 import Button from "../Common/Button";
 import MonthPicker from "../Misc/MonthPicker";
 import { pastEvents, upcomingEvents } from "../Misc/eventData";
