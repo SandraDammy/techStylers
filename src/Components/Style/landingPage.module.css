@@ -100,19 +100,73 @@ span {
     background-color: var(--secondary-bg);
     overflow-x: hidden;
   }
+  .imgContainer, .heroImg, .heroImg img{
+    display: none;
+  }
+  .textContainer{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .btnJoin{
+    margin: 0 auto;
+    width: 50%;
+  }
+  .bigTxt{
+    margin: 5rem 0;
+    justify-content:center;
+  }
+  
 }
-
+@media (max-width:480px){
+  .bigTxt{
+    flex-wrap:wrap;
+    gap:1em;
+    margin: 4rem auto;
+   }
+   .bigTxt div .big{
+    font-size: 1em;
+   }
+   .bigTxt div .txt{
+    font-size: .5em;
+   }
+   .title{
+    font-size: 3em;
+    line-height: 1.4em;
+   }
+   .btnJoin{
+    margin: 0;
+    width: 50%;
+}
+   .textContainer{
+    justify-content:center;
+   }
+}
 /* For even smaller devices like smartphones */
 @media (max-width: 480px) {
-  .title {
-    font-size: 28px;
-  }
-
-  .big {
-    font-size: 24px;
-  }
-
-  .txt {
-    font-size: 18px;
-  }
+     html{
+      font-size: 80%;
+     }
+     .bigTxt{
+      flex-wrap:wrap;
+      gap:1em;
+      margin: 2rem auto;
+     }
+     .bigTxt div .big{
+      font-size: 1.5em;
+     }
+     .bigTxt div .txt{
+      font-size: 1em;
+     }
+     .title{
+      font-size: 3em;
+      line-height: 1.4em;
+     }
+     .btnJoin{
+      margin: 0;
+      width: 50%;
+      margin-left: 2.2em;
+}
+     .textContainer{
+      justify-content:center;
+     }
 }

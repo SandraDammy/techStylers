@@ -1,4 +1,4 @@
-.container {
+ .container {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -70,4 +70,19 @@
 
 .imgContainer img {
     max-width: 396.76px;
+}
+@media (max-width: 968px){
+    .imgContainer, .imgContainer img{
+        display:none;
+    }
+}
+@media (max-width: 650px){
+    .txt{
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5em;
+    }
+    .txt div ul li{
+        padding-left: 0x;
+    }
 }
