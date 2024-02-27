@@ -2,74 +2,109 @@ import React from "react";
 import Title from "../Common/Title";
 import style from "../Style/Article.module.css";
 import Button from "../Common/Button";
-import { articleData } from "../Misc/articleData";
 import { useState } from "react";
+import { articleData } from "../Misc/articleData";
 
 const Articles = () => {
-  const [articles, setArticles] = useState("All");
+  const btnEventSee = () => {
+    console.log("Event clicked!");
+  };
 
-  const handleSelectionClicks = (sectionTag) => {
-    setArticles(sectionTag);
-  }
- 
+  const [article, setArticle] = useState("all");
+  const [techTrend, setTechTrend] = useState("techTrend");
+  const [careerAdvice, setCareerAdvice] = useState("careerAdvice");
+  const [successStories, setSuccessStories] = useState("successStories");
+  const [articledata, setArticleData] = useState(articleData);
+
+  const handleEvent = (e) => {
+    if (e.target.value === "all") {
+      setArticle("all");
+      setArticleData(articleData);
+    } else if (e.target.value === "techTrend") {
+      setTechTrend("techTrend");
+      const techTrendData = articleData.filter((article) => {
+        return article.tag === "Tech Trend";
+      });
+      setArticleData(techTrendData);
+    } else if (e.target.value === "careerAdvice") {
+      setCareerAdvice("careerAdvice");
+      const careerAdviceData = articleData.filter((article) => {
+        return article.tag === "Career Advice";
+      });
+      setArticleData(careerAdviceData);
+    } else if (e.target.value === "successStories") {
+      setSuccessStories("successStories");
+      const successStoriesData = articleData.filter((article) => {
+        return article.tag === "Success Stories";
+      });
+      setArticleData(successStoriesData);
+    } else {
+      setArticle("all");
+      setArticleData(articleData);
+    }
+  };
+
   return (
     <div className={style.container}>
       <Title className={"titlePry"} title={"Latest Articles"} />
       <div className={style.buttonsContainer}>
         <div className={style.buttons}>
           <Button
-            className={articles === "All" ? "btnActive" : "btnTran"}
+            className={article === "all" ? "btnActive" : "btnTran"}
             title={"All"}
-            btnEventHandler={() => handleSelectionClicks("All")}
+            btnEventHandler={handleEvent}
+            value={"all"}
           />
           <Button
-            className={articles === "Tech Trends" ? "btnActive" : "btnTran"}
+            className={techTrend === "techTrend" ? "btnActive" : "btnTran"}
             title={"Tech Trends"}
-            btnEventHandler={() => handleSelectionClicks("Tech Trends")}
+            btnEventHandler={handleEvent}
+            value={"techTrend"}
           />
           <Button
-            className={articles === "Career Advice" ? "btnActive" : "btnTran"}
+            className={
+              careerAdvice === "careerAdvice" ? "btnActive" : "btnTran"
+            }
             title={"Career Advice"}
-            btnEventHandler={() => handleSelectionClicks("Career Advice")}
+            btnEventHandler={handleEvent}
+            value={"careerAdvice"}
           />
           <Button
-            className={articles === "Success Stories" ? "btnActive" : "btnTran"}
+            className={
+              successStories === "successStories" ? "btnActive" : "btnTran"
+            }
             title={"Success Stories"}
-            btnEventHandler={() => handleSelectionClicks("Success Stories")}
+            btnEventHandler={handleEvent}
+            value={"successStories"}
           />
         </div>
         <div className={style.seeAll}>
           <Button
             className={"btnOutline"}
             title={"See All"}
+            btnEventHandler={btnEventSee}
           />
         </div>
       </div>
       <div className={style.articleContainer}>
-
-
-        {articleData.filter((article) => {
-          if (articles === "All") {
-            return article;
-          } else {
-            return article.tag === articles;
-          }
-        }).map((article) => {
+        {articledata.map((article, index) => {
           return (
-            <div key={article.id} className={style.article}>
+            <div className={style.article} key={index}>
               <div className={style.articleInfo}>
+                <div className={style.articleDetail}>
                 <p className={style.articleCategory}>{article.tag}</p>
                 <div className={style.dot}></div>
                 <p className={style.articleTimeDate}>{article.readTime}</p>
-              </div>
-              <div className={style.articleTitle}>
-                <p>{article.title}</p>
-              </div>
-              <div className={style.articleTimeDate}>
-                <p>{article.date}</p>
+                </div>
+                <div className={style.articleTitle}>
+                  <p>{article.title}</p>
+                </div>
+                <div className={style.articleTimeDate}>
+                  <p>{article.published}</p>
+                </div>
               </div>
             </div>
-          )
+          );
         })}
       </div>
     </div>

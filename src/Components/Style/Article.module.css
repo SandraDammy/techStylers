@@ -40,9 +40,9 @@
 
 .articleInfo {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: start;
-    gap: 0.6em;
+    gap: 0.5em;
 }
 
 .articleCategory {
