@@ -68,4 +68,18 @@
     font-weight: 400;
     line-height: 28px;
 }
+@media (max-width: 968px){
+    .teamMember{
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 680px){
+   .teamMembers{
+    flex-direction: column;
+   } 
+   .teamImg{
+    max-width: 200px;
+   }
+}
 
