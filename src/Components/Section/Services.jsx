@@ -7,7 +7,7 @@ import Services3 from "../../Assets/Image/Our services 3.png";
 
 const Services = () => {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="services">
       <Title className={"titlePry"} title={"Our Services"} />
       <div className={style.imgContainer}>
         <div className={style.card}>

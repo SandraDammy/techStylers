@@ -8,7 +8,7 @@ import Feyikemi from "../../Assets/Image/Feyikemi.png";
 
 const Testimonials = () => {
   return (
-    <div className={style.testimonialsContainer}>
+    <div className={style.testimonialsContainer} id="testimonials">
       <Title className={"titlePry"} title={"Members Testimonials"} />
       <p className={style.testTxt}>
         Hear what our members have to say about us

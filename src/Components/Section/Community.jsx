@@ -4,7 +4,7 @@ import image from "../../Assets/Image/About us image.png"
 
 const Community = () => {
   return (
-    <div className={style.container}>
+    <div className={style.container}id="community">
       <div className={style.imgContainer}>
         <img src={image} alt="" className={style.logo} />
       </div>

@@ -15,7 +15,7 @@ const Footer = () => {
           <div className={style.navChild}>
             <h6>Services</h6>
             <p>
-              <Link to="/tech-workshop" className={style.link}>
+              <Link to="#services" className={style.link}>
                 Tech Workshop
               </Link>
             </p>
@@ -25,7 +25,7 @@ const Footer = () => {
               </Link>
             </p>
             <p>
-              <Link to="/community" className={style.link}>
+              <Link to="/event" className={style.link}>
                 Community Events
               </Link>
             </p>
@@ -33,7 +33,7 @@ const Footer = () => {
           <div className={style.navChild}>
             <h6>Information</h6>
             <p>
-              <Link to="/tech-trends" className={style.link}>
+              <Link to="/blog" className={style.link}>
                 Tech Trends
               </Link>
             </p>
