@@ -18,6 +18,7 @@
     width: 517px;
     transform: translateX(-100%); /* Start off-screen to the left */
     transition: transform 1s ease-out;
+    overflow: hidden;
 }
 
 .imgContainer img.active {
@@ -58,6 +59,7 @@
     line-height: 28px;
     transform: translateX(100%); /* Start from the right */
     transition: all 0.8s ease-in;
+    opacity: 0;
 }
 
 .textContainer p.active {
