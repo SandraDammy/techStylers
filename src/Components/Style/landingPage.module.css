@@ -50,8 +50,8 @@ span {
   justify-content: flex-end;
   align-items: flex-start;
   background: var(--tertiary-bg);
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   border-radius: 0px 0px 0px 60px;
 }
 
@@ -66,8 +66,9 @@ span {
 }
 
 .logo {
-  width: 270px;
-  height: 474px;
+  width: 294px;
+  height: 429px;
+  transition: 1s ease-in-out;
 }
 
 .bigTxt {
@@ -77,16 +78,15 @@ span {
   margin-top: 7rem;
   margin-bottom: 3rem;
   color: var(--TS-Black, #373435);
-  gap: 2.5rem;
 }
 
 .big {
-  font-size: 36px;
+  font-size: 33px;
   font-weight: 700;
 }
 
 .txt {
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 400;
 }
 
