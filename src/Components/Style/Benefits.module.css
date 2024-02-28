@@ -70,7 +70,14 @@
 
 .imgContainer img {
     max-width: 396.76px;
+    transform: translateX(100%);
+    transition: transform 1s ease-out;
 }
+
+.imgContainer img.active {
+    transform: translateX(0);
+}
+
 @media (max-width: 968px){
     .imgContainer, .imgContainer img{
         display:none;
