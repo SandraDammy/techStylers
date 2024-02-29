@@ -7,14 +7,14 @@ import Services3 from "../../Assets/Image/Our services 3.png";
 
 const Services = () => {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="services">
       <Title className={"titlePry"} title={"Our Services"} />
       <div className={style.imgContainer}>
         <div className={style.card}>
           <div className={style.imgServices}>
             <img src={Services1} alt="Resources Img" className={style.img} />
           </div>
-          <div className={style.txtService}>
+          <div className={style.txtService} id="techWorkshop">
             <h4>Tech Workshop</h4>
             <p>
               Our workshops provide interactive, hands-on learning experiences

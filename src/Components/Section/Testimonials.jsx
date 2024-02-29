@@ -19,7 +19,7 @@ const Testimonials = () => {
           setIsActive(true);
         }
       },
-      { threshold: 0.5 } // Optional: Observe when 50% of the element is visible
+      { threshold: 0.8 } // Optional: Observe when 80% of the element is visible
     );
 
     if (current) {
@@ -34,7 +34,7 @@ const Testimonials = () => {
   }
   , []);
   return (
-    <div className={style.testimonialsContainer} ref={containerRef}>
+    <div className={style.testimonialsContainer} ref={containerRef} id="successStories">
       <Title className={"titlePry"} title={"Members Testimonials"} />
       <p className={style.testTxt}>
         Hear what our members have to say about us
