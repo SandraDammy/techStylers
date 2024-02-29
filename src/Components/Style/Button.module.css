@@ -14,6 +14,8 @@
     font-weight: 500;
     line-height: 24px;
     cursor: pointer;
+    width: 195px;
+    height: 60px;
 }
 
 .btnPry:hover {
@@ -57,7 +59,7 @@
     border-radius: 6px;
     transition: 0.4s;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 25px;
     cursor: pointer;
 }
@@ -65,6 +67,24 @@
 .btnTran:hover {
     background-color: var(--bck-color-bg);
     color: var(--secondary-color);
+}
+
+.btnActive {
+    display: flex;
+    color: var(--secondary-color);
+    background-color: var(--bck-color-bg);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 0.4s;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    cursor: pointer;
+    width: fit-content
 }
 
 .btnOutline {

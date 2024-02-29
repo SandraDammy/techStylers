@@ -2,104 +2,75 @@ import React from "react";
 import Title from "../Common/Title";
 import style from "../Style/Article.module.css";
 import Button from "../Common/Button";
+import { articleData } from "../Misc/articleData";
+import { useState } from "react";
 
 const Articles = () => {
-  const btnEventHandler = () => {
-    console.log("Event clicked!");
-  };
-  const btnEventTech = () => {
-    console.log("Event clicked!");
-  };
-  const btnEventSuccess = () => {
-    console.log("Event clicked!");
-  };
-  const btnEventCareer = () => {
-    console.log("Event clicked!");
-  };
-  const btnEventSee = () => {
-    console.log("Event clicked!");
-  };
+  const [articles, setArticles] = useState("All");
+
+  const handleSelectionClicks = (sectionTag) => {
+    setArticles(sectionTag);
+  }
+ 
   return (
     <div className={style.container}>
       <Title className={"titlePry"} title={"Latest Articles"} />
       <div className={style.buttonsContainer}>
         <div className={style.buttons}>
           <Button
-            className={"btnTran"}
+            className={articles === "All" ? "btnActive" : "btnTran"}
             title={"All"}
-            btnEventHandler={btnEventHandler}
+            btnEventHandler={() => handleSelectionClicks("All")}
           />
           <Button
-            className={"btnTran"}
+            className={articles === "Tech Trends" ? "btnActive" : "btnTran"}
             title={"Tech Trends"}
-            btnEventHandler={btnEventTech}
+            btnEventHandler={() => handleSelectionClicks("Tech Trends")}
           />
           <Button
-            className={"btnTran"}
+            className={articles === "Career Advice" ? "btnActive" : "btnTran"}
             title={"Career Advice"}
-            btnEventHandler={btnEventCareer}
+            btnEventHandler={() => handleSelectionClicks("Career Advice")}
           />
           <Button
-            className={"btnTran"}
+            className={articles === "Success Stories" ? "btnActive" : "btnTran"}
             title={"Success Stories"}
-            btnEventHandler={btnEventSuccess}
+            btnEventHandler={() => handleSelectionClicks("Success Stories")}
           />
         </div>
         <div className={style.seeAll}>
           <Button
             className={"btnOutline"}
             title={"See All"}
-            btnEventHandler={btnEventSee}
           />
         </div>
       </div>
       <div className={style.articleContainer}>
-        <div className={style.article}>
-          <div className={style.articleInfo}>
-            <p className={style.articleCategory}>Tech Trend</p>
-            <div className={style.dot}></div>
-            <p className={style.articleTimeDate}>5 mins read</p>
-          </div>
-          <div className={style.articleTitle}>
-            <p>
-              Watch Axiom Space’s first all-European mission blast off the
-              launchpad
-            </p>
-          </div>
-          <div className={style.articleTimeDate}>
-            <p>4 hours ago</p>
-          </div>
-        </div>
 
-        <div className={style.article}>
-          <div className={style.articleInfo}>
-            <p className={style.articleCategory}>Career Advice</p>
-            <div className={style.dot}></div>
-            <p className={style.articleTimeDate}>7 mins read</p>
-          </div>
-          <div className={style.articleTitle}>
-            <p>
-              How to Choose a Tech Career in 2022 – A Career Changer's Guide
-            </p>
-          </div>
-          <div className={style.articleTimeDate}>
-            <p>Jan 22, 2024</p>
-          </div>
-        </div>
 
-        <div className={style.article}>
-          <div className={style.articleInfo}>
-            <p className={style.articleCategory}>Success Stories</p>
-            <div className={style.dot}></div>
-            <p className={style.articleTimeDate}>3 mins read</p>
-          </div>
-          <div className={style.articleTitle}>
-            <p>Biggest success stories of women in the world of tech</p>
-          </div>
-          <div className={style.articleTimeDate}>
-            <p>Dec 22, 2023</p>
-          </div>
-        </div>
+        {articleData.filter((article) => {
+          if (articles === "All") {
+            return article;
+          } else {
+            return article.tag === articles;
+          }
+        }).map((article) => {
+          return (
+            <div key={article.id} className={style.article}>
+              <div className={style.articleInfo}>
+                <p className={style.articleCategory}>{article.tag}</p>
+                <div className={style.dot}></div>
+                <p className={style.articleTimeDate}>{article.readTime}</p>
+              </div>
+              <div className={style.articleTitle}>
+                <p>{article.title}</p>
+              </div>
+              <div className={style.articleTimeDate}>
+                <p>{article.date}</p>
+              </div>
+            </div>
+          )
+        })}
       </div>
     </div>
   );
