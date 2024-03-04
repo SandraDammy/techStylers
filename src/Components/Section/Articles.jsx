@@ -13,7 +13,7 @@ const Articles = () => {
   }
  
   return (
-    <div className={style.container}>
+    <div className={style.container} id="articles">
       <Title className={"titlePry"} title={"Latest Articles"} />
       <div className={style.buttonsContainer}>
         <div className={style.buttons}>

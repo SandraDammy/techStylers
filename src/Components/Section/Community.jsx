@@ -15,7 +15,7 @@ const Community = () => {
           setIsActive(true);
         }
       },
-      { threshold: 0.5 } // Optional: Observe when 50% of the element is visible
+      { threshold: 0.8 } // Optional: Observe when 80% of the element is visible
     );
 
     if (current) {
@@ -36,7 +36,7 @@ const Community = () => {
   //   }, 200); 
   // }, [])
   return (
-    <div className={style.container} ref={containerRef}>
+    <div className={style.container} ref={containerRef} id="community">
       <div className={style.imgContainer}>
         <img src={image} alt="" className={`${style.logo} ${isActive ? style.active : ''}`} />
       </div>

@@ -15,17 +15,17 @@ const Footer = () => {
           <div className={style.navChild}>
             <h6>Services</h6>
             <p>
-              <Link to="/tech-workshop" className={style.link}>
+              <Link to="#techWorkshop" className={style.link}>
                 Tech Workshop
               </Link>
             </p>
             <p>
-              <Link to="/learning-resources" className={style.link}>
+              <Link to="/resources" className={style.link}>
                 Learning Resources
               </Link>
             </p>
             <p>
-              <Link to="/community" className={style.link}>
+              <Link to="#community" className={style.link}>
                 Community Events
               </Link>
             </p>
@@ -33,17 +33,17 @@ const Footer = () => {
           <div className={style.navChild}>
             <h6>Information</h6>
             <p>
-              <Link to="/tech-trends" className={style.link}>
+              <Link to="#articles" className={style.link}>
                 Tech Trends
               </Link>
             </p>
             <p>
-              <Link to="/career-advice" className={style.link}>
+              <Link to="/blog" className={style.link}>
                 Career Advice
               </Link>
             </p>
             <p>
-              <Link to="/success-stories" className={style.link}>
+              <Link to="#successStories" className={style.link}>
                 Success Stories
               </Link>
             </p>
@@ -57,7 +57,7 @@ const Footer = () => {
               </Link>
             </p>
             <p>
-              <Link to="/services" className={style.link}>
+              <Link to="#services" className={style.link}>
                 Services
               </Link>
             </p>
