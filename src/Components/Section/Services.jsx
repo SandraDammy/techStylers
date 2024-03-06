@@ -21,7 +21,12 @@ const Services = () => {
               to empower women with the skills and knowledge needed to succeed
               in the tech industry.
             </p>
-            <p className={style.readme}> Read More...</p>
+            <a
+              href="https://www.youtube.com/@techstylers1285"
+              className={style.youtube}
+            >
+              Read More...
+            </a>
           </div>
         </div>
         <div className={style.card}>
@@ -35,7 +40,12 @@ const Services = () => {
               is accessible to all women, regardless of their level of
               experience or background.
             </p>
-            <p className={style.readme}> Read More...</p>
+            <a
+              href="https://www.youtube.com/@techstylers1285"
+              className={style.youtube}
+            >
+              Read More...
+            </a>
           </div>
         </div>
         <div className={style.card}>
@@ -49,7 +59,12 @@ const Services = () => {
               share ideas, and learn from each other in a supportive and
               inclusive environment.
             </p>
-            <p className={style.readme}> Read More...</p>
+            <a
+              href="https://www.youtube.com/@techstylers1285"
+              className={style.youtube}
+            >
+              Read More...
+            </a>
           </div>
         </div>
       </div>
