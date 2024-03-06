@@ -39,17 +39,16 @@
 }
 
 .textContainer h1 {
-    font-size: 24px;
     margin-bottom: 5px;
     font-size: 40px;
-    font-weight: bolder;
+    font-weight: 700;
+    line-height: 48px;
     transform: translateY(-100%); /* Start above its position */
-    /* line-height: 48px; */
     transition: all 0.8s ease-in; 
 }
 
 .textContainer h1.active {
-    transform: translateX(0) translateY(0); /* Move into position */
+    transform: translateX(0) translateY(0); 
     opacity: 1;
 }
 
@@ -60,22 +59,23 @@
     transform: translateX(100%); /* Start from the right */
     transition: all 0.8s ease-in;
     opacity: 0;
+    text-align: justify;
 }
 
 .textContainer p.active {
     transform: translateX(0); /* Move into position */
     opacity: 1;
 }
-
-.readme p {
+ /*Start below its position*/
+/* .readme p {
     font-size: 24px;
     font-weight: 600;
     line-height: 24px;
     margin-bottom: 1rem;
     color: var(--primary-color);
-    transform: translateY(100%); /*Start below its position*/
+    transform: translateY(100%);
     transition: all 0.8s ease-in; 
-}
+} */
 
 .readme p.active {
     transform: translateX(0) translateY(0); /* Move into position */

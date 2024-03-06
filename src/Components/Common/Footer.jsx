@@ -81,48 +81,61 @@ const Footer = () => {
             <div className={style.searchContainer}>
               <h6>Subscribe</h6>
               <div className={style.searchItems}>
-              <input
-                type="search"
-                name="subscribe"
-                id="subscribe"
-                placeholder="Email address"
-                className={style.searchBar}
-              />
-              <button type="submit" className={style.formButton}>
-                <IoArrowForward className={style.buttonIcon}/>
-              </button>
+                <input
+                  type="search"
+                  name="subscribe"
+                  id="subscribe"
+                  placeholder="Email address"
+                  className={style.searchBar}
+                />
+                <button type="submit" className={style.formButton}>
+                  <IoArrowForward className={style.buttonIcon} />
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className={style.copyRight}>
-            <p>
-                Techstylers &copy; 2024 All Rights Reserved
-            </p>
-            <div
-            className={style.divider}
-            >
+          <p>Techstylers &copy; 2024 All Rights Reserved</p>
+          <div className={style.divider}></div>
+          <div className={style.bottomRight}>
+            <img src={logo} alt="Logo" width="75px" />
+            <div className={style.bottomLink}>
+              <p>
+                <Link to="/terms" className={style.link}>
+                  Terms
+                </Link>
+              </p>
+              <p>
+                <Link to="/privacy" className={style.link}>
+                  Privacy
+                </Link>
+              </p>
             </div>
-            <div className={style.bottomRight}>
-              <img src={logo} alt="Logo" width="75px" />
-              <div className={style.bottomLink}>
-                <p>
-                  <Link to="/terms" className={style.link}>
-                    Terms
-                  </Link>
-                </p>
-                <p>
-                  <Link to="/privacy" className={style.link}>
-                    Privacy
-                  </Link>
-                </p>
-              </div>
-              <div className={style.socials}>
-                <img src={linkedin} alt="Linkedin" width="40px"/>
-                <img src={facebook} alt="Facebook" width="40px"/>
-                <img src={twitter} alt="Twitter" width="40px"/>
-              </div>
+            <div className={style.socials}>
+              <a
+                href="https://www.linkedin.com/company/techstylers/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <img src={linkedin} alt="Linkedin" width="40px" />
+              </a>
+              <a
+                href="https://www.linkedin.com/techstylers/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <img src={facebook} alt="Facebook" width="40px" />
+              </a>
+              <a
+                href="https://x.com/Tech_Stylers"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <img src={twitter} alt="Twitter" width="40px" />
+              </a>
             </div>
+          </div>
         </div>
       </div>
     </footer>
