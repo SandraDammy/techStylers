@@ -57,7 +57,7 @@ const AboutUs = () => {
         </div>
         <div className={about.textlink}>
           <p>
-            Want to be a part of the community? <a href="https://discord.gg/fzzmKDm44C">Click Here</a>
+            Want to be a part of the community? <a href="https://discord.gg/fzzmKDm44C" target="_blank">Click Here</a>
           </p>
         </div>
       </div>
