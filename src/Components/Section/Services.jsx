@@ -23,6 +23,7 @@ const Services = () => {
             </p>
             <a
               href="https://www.youtube.com/@techstylers1285"
+              target="_blank"
               className={style.youtube}
             >
               Read More...
@@ -42,6 +43,7 @@ const Services = () => {
             </p>
             <a
               href="https://www.youtube.com/@techstylers1285"
+              target="_blank"
               className={style.youtube}
             >
               Read More...
@@ -61,6 +63,7 @@ const Services = () => {
             </p>
             <a
               href="https://www.youtube.com/@techstylers1285"
+              target="_blank"
               className={style.youtube}
             >
               Read More...
