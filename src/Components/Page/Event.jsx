@@ -26,12 +26,16 @@ const Event = () => {
       setEvent("upcoming");
       setEventData2(upcomingEvents);
     }
-  }
+  };
 
   return (
     <div className={style.container}>
       <div className={style.eventRegister}>
-        <h1>Tech Elevate: <br/>Empowering Innovation <br/>with Techstylers</h1>
+        <h1>
+          Tech Elevate: <br />
+          Empowering Innovation <br />
+          with Techstylers
+        </h1>
         <div className={style.eventBtn}>
           <Button
             className={"btnPry"}
@@ -71,49 +75,48 @@ const Event = () => {
           </div>
         </div>
         <div className={style.gridContainer}>
-          {event === "past" ? eventData.map((data, index) => (
-            <div key={index} className={style.card}>
-              <div className={style.imgResources}>
-              <img src={data.image} alt="event" className={style.img}/>
-              </div>
-              <div className={style.txtContainer}>
-              <div className={style.txtEvent}>
-              <h1>{data.title}</h1>
-              <p>{data.date}</p>
-              </div>
-              <div className={style.eventTxt}>
-              <p>{data.description}</p>
-              <a href="#" className={style.seeMoreLink}>
-                  See more details...
-                </a>
+          {event === "past"
+            ? eventData.map((data, index) => (
+                <div key={index} className={style.card}>
+                  <div className={style.imgResources}>
+                    <img src={data.image} alt="event" className={style.img} />
+                  </div>
+                  <div className={style.txtContainer}>
+                    <div className={style.txtEvent}>
+                      <h1>{data.title}</h1>
+                      <p>{data.date}</p>
+                    </div>
+                    <div className={style.eventTxt}>
+                      <p>{data.description}</p>
+                      <a href="#" className={style.seeMoreLink}>
+                        See more details...
+                      </a>
+                    </div>
+                  </div>
                 </div>
+              ))
+            : eventData2.map((data, index) => (
+                <div key={index} className={style.card}>
+                  <div className={style.imgResources}>
+                    <img src={data.image} alt="event" className={style.img} />
+                  </div>
+                  <div className={style.txtContainer}>
+                    <div className={style.txtEvent}>
+                      <h1>{data.title}</h1>
+                      <p>{data.date}</p>
+                    </div>
+                    <div className={style.eventTxt}>
+                      <p>{data.description}</p>
+                      <a href="#" className={style.seeMoreLink}>
+                        See more details...
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
         </div>
       </div>
-    )) : eventData2.map((data, index) => (
-      <div key={index} className={style.card}>
-        <div className={style.imgResources}>
-        <img src={data.image} alt="event" className={style.img}/>
-        </div>
-        <div className={style.txtContainer}>
-        <div className={style.txtEvent}>
-        <h1>{data.title}</h1>
-        <p>{data.date}</p>
-        </div>
-        <div className={style.eventTxt}>
-        <p>{data.description}</p>
-        <a href="#" className={style.seeMoreLink}>
-            See more details...
-          </a>
-          </div>
-    </div> 
-  </div>
-  ))
-    }
-
-  </div>
-</div>
-</div>
-
+    </div>
   );
 };
 
