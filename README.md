@@ -1,68 +1,73 @@
-# Getting Started with Create React App
+# TechStylers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React community website for women passionate about technology. TechStylers brings together members, mentors, and resources in a vibrant digital space focused on learning, networking, and career growth in the tech industry.
 
-## Available Scripts
+Live demo: https://tech-stylers.vercel.app/
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+TechStylers is a community-driven platform designed to support women in tech through educational content, events, and networking opportunities. The site highlights the organization's mission, showcases community impact, and provides access to articles, workshops, and upcoming activities.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project uses a multi-page layout built with React Router, with each section tailored to a different part of the community experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Hero landing page for the community brand
+- About page with community statistics and mission statement
+- Events, blog, gallery, and resources sections
+- Community and service highlights
+- Testimonials and team section
+- Responsive, modern UI for web browsing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- React
+- JavaScript
+- React Router
+- CSS Modules
+- React Icons
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `src/App.js` – route configuration for the app pages
+- `src/Components/Page/` – top-level page components such as Home, About Us, Blog, Resources, Events, Gallery, and Contact
+- `src/Components/Section/` – reusable homepage sections like landing, services, benefits, team, and testimonials
+- `src/Components/Style/` – styling modules for each page or section
+- `src/Assets/` – images and icons used throughout the site
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+1. Install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Open the app in your browser at:
 
-## Learn More
+   ```text
+   http://localhost:3000
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Production Build
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To generate a production build:
 
-### Code Splitting
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This creates an optimized production bundle ready for deployment.
 
-### Analyzing the Bundle Size
+## Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project focuses on building an engaging online presence for a tech community while showcasing the value of mentorship, collaboration, and inclusive learning opportunities.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
